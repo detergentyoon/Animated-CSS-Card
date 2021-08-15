@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+body {
+  /* display: flex; */
+}
+.cards {
+  height: 1000px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+.card {
+  height: 360px;
+  width: 240px;
+  background-color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 2px 2px 9px black;
+  margin: 50px;
+}
+.card.card--unlock {
+  height: 360px;
+  width: 240px;
+  background-color: gray;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 2px 2px 9px black;
+  margin: 50px;
+}
+img {
+  height: 200px;
+  width: 240px;
+  border-radius: 2px 2px 120px 0px;
+  position: absolute;
+  transition: .6s;
+  object-fit: cover;
+}
+img.unlock {
+  height: 200px;
+  width: 240px;
+  border-radius: 2px 2px 120px 0px;
+  position: absolute;
+  transition: .6s;
+  object-fit: cover;
+  filter: blur(3px) brightness(60%);
+}
+
+.txt-box {
+  position: relative;
+  top: 200px;
+  transition: .5s;
+}
+.txt-box h2 {
+  margin: 15px;
+  font-style: italic;
+}
+.txt-box p {
+  font-size: 14px;
+  margin: 14px;
+}
+.card:hover img {
+  height: 360px;
+  border-radius: 2px;
+}
+.card:hover .txt-box {
+  top: 150px;
+  opacity: 0;
+}
+.card:hover .box {
+  background-color: white;
+}

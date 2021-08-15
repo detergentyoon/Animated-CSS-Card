@@ -1,0 +1,42 @@
+/* box colors */
+
+.box{
+  height: 20px;
+  width: 20px;
+  background-color: #7fd6a6;
+  border-radius: 2px;
+  position: relative;
+  top: 212px;
+  left: 10px;
+  transition: .6s
+}
+.box.box--rare {
+  height: 20px;
+  width: 20px;
+  background-color: #8400f5;
+  border-radius: 2px;
+  position: relative;
+  top: 212px;
+  left: 10px;
+  transition: .6s
+}
+.box.box--epic {
+  height: 20px;
+  width: 20px;
+  background-color: #f88527;
+  border-radius: 2px;
+  position: relative;
+  top: 212px;
+  left: 10px;
+  transition: .6s
+}
+.box.box--legendary {
+  height: 20px;
+  width: 20px;
+  background-color: #fdce38;
+  border-radius: 2px;
+  position: relative;
+  top: 212px;
+  left: 10px;
+  transition: .6s
+}
